@@ -1,20 +1,110 @@
 .products {
-}
-.products-subtitle {
-}
-.products-title {
-}
-.products-list {
-}
-.products-item {
-}
-.products-img {
-}
-.products-item-subtitle {
-}
-.products-item-text {
-}
-.products-btn {
-}
-.products-item-suabtitle {
+  padding-top: 61px;
+  padding-bottom: 60px;
+  background-image: url(/img/mobile/Frame\ 404.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .products-subtitle {
+    color: #131313;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .products-title {
+    color: #131313;
+    text-align: center;
+    font-family: "Seymour One";
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-bottom: 148px;
+  }
+  .products-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 168px;
+    padding-right: 5px;
+    padding-left: 5px;
+    align-items: center;
+  }
+  .products-item {
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 16px;
+    height: 420px;
+    position: relative;
+    width: 280px;
+  }
+  .ice-cream {
+    background: #aec6a5;
+  }
+  .ice-coffee {
+    background: #efd478;
+  }
+  .milkshakes {
+    background: #d6936d;
+  }
+  .ice-cream-img {
+    box-shadow: 0 11px 0 0 rgba(156, 190, 143, 0.7),
+      0px 5.342px 30.033px rgba(10, 136, 23, 0.25);
+  }
+  .ice-coffee-img {
+    box-shadow: 0 11px 0 0 rgba(248, 210, 78, 0.7),
+      0px 5.404px 20.265px rgba(153, 114, 23, 0.25);
+  }
+  .milkshakes-img {
+    box-shadow: 0 11px 0 0 rgba(213, 117, 63, 0.7),
+      0px 5.413px 20.3px rgba(0, 0, 0, 0.25);
+  }
+  .products-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 31px;
+    margin-top: -108px;
+  }
+  .products-item-suabtitle {
+    color: #131313;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+  .products-item-text {
+    color: #131313;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 176%; /* 24.64px */
+    letter-spacing: 0.56px;
+    width: 200px;
+  }
+  .products-btn {
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 16px;
+    padding: 0;
+    position: absolute;
+    bottom: 16px;
+  }
+  @media screen and (min-width: 480px) {
+    .products-item {
+      width: 320px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(/img/desktop/Frame\ 403.png);
+  }
+  @media screen and (min-width: 1200px) {
+
+  }
 }

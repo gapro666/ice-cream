@@ -56,12 +56,19 @@ th {
 a {
   text-decoration: none;
   color: currentColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 body {
   display: flex;
   flex-direction: column;
   height: 100vh;
   min-height: 100vh;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: Montserrat;
+  line-height: normal;
 
   /* font-family: 'Jost'; */
   /* font-size: 22px; */
