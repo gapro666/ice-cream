@@ -103,8 +103,26 @@
   }
   @media screen and (min-width: 768px) {
     background-image: url(/img/desktop/Frame\ 403.png);
+    .products-list {
+      flex-direction: row;
+      column-gap: 16px;
+    }
+    .products-item-suabtitle {
+      font-size: 22px;
+    }
   }
   @media screen and (min-width: 1200px) {
-
+    padding-bottom: 97px;
+    .products-list {
+      flex-direction: row;
+      column-gap: 26px;
+    }
+    .products-item {
+      padding-bottom: 60px;
+    }
+    .products-item-suabtitle {
+      font-size: 30px;
+      letter-spacing: 1.2px;
+    }
   }
 }

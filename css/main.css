@@ -124,8 +124,7 @@ main {
 .footer {
   background-color: #84A178;
 }
-
-.footer-subtilte {
+.footer .footer-subtilte {
   color: #FCFCFC;
   font-family: Montserrat;
   font-size: 18px;
@@ -134,8 +133,7 @@ main {
   line-height: normal;
   text-transform: uppercase;
 }
-
-.footer-tilte {
+.footer .footer-tilte {
   color: #FCFCFC;
   font-family: Montserrat;
   font-size: 34px;
@@ -145,8 +143,7 @@ main {
   letter-spacing: 1.36px;
   text-transform: uppercase;
 }
-
-.footer-text {
+.footer .footer-text {
   color: #FCFCFC;
   font-family: Montserrat;
   font-size: 34px;
@@ -156,8 +153,7 @@ main {
   letter-spacing: 1.36px;
   text-transform: uppercase;
 }
-
-.footer-lext {
+.footer .footer-lext {
   color: #7A7A7A;
   text-align: center;
   font-family: Montserrat;
@@ -166,7 +162,6 @@ main {
   font-weight: 700;
   line-height: 152%;
 }
-
 .header {
   background-color: #84a178;
   padding-top: 12px;
@@ -402,101 +397,80 @@ main {
 }
 
 .how-made {
-  background-color: #84A178;
+  background-color: #84a178;
+  padding-top: 61px;
+  padding-bottom: 68px;
 }
-
-.how-made-subtitle {
-  color: #FCFCFC;
+.how-made .how-made-subtitle {
+  color: #fcfcfc;
   text-align: center;
-  font-family: Montserrat;
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   text-transform: uppercase;
+  margin-bottom: 12px;
 }
-
-.how-made-title {
-  color: #FCFCFC;
+.how-made .how-made-title {
+  color: #fcfcfc;
   text-align: center;
   font-family: "Seymour One";
   font-size: 30px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   letter-spacing: 1.2px;
   text-transform: uppercase;
+  margin-bottom: 54px;
 }
-
-.how-made-img {
+.how-made .how-made-img {
   width: 278.996px;
   height: 278px;
+  border-radius: 50%;
+  background: url(<path-to-image>) lightgray 0px -15.02px/100% 123.077% no-repeat;
+  box-shadow: 0 -22px 0 0 #f8d34e;
 }
-
-.how-made-text {
-  color: #FCFCFC;
+.how-made .how-made-text {
+  color: #fcfcfc;
   text-align: center;
-  font-family: Montserrat;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 176%; /* 21.12px */
+  line-height: 176%;
   letter-spacing: 0.48px;
 }
-
-.how-made-span-text {
-  color: #FCFCFC;
+.how-made .how-made-span-text {
+  color: #fcfcfc;
   text-align: center;
-  font-family: Montserrat;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 162%; /* 19.44px */
+  line-height: 162%;
 }
-
-.how-made-span-text-two {
-  color: #FCFCFC;
+.how-made .how-made-span-text-two {
+  color: #fcfcfc;
   text-align: center;
-  font-family: Montserrat;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 162%; /* 19.44px */
+  line-height: 162%;
 }
-
-.how-made-btn {
+.how-made .how-made-btn {
   color: #000;
   text-align: center;
-  font-family: Montserrat;
   font-size: 14px;
-  font-style: normal;
   font-weight: 600;
-  line-height: 18px; /* 128.571% */
+  line-height: 129%;
 }
-
-.how-made-item-subtitle {
-  color: #FCFCFC;
+.how-made .how-made-item-subtitle {
+  color: #fcfcfc;
   text-align: center;
-  font-family: Montserrat;
   font-size: 36px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   letter-spacing: 1.44px;
   text-transform: uppercase;
 }
-
-.how-made-item-text {
-  color: #FCFCFC;
+.how-made .how-made-item-text {
+  color: #fcfcfc;
   text-align: center;
-  font-family: Montserrat;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 170%; /* 20.4px */
+  line-height: 170%;
 }
-
-.location-ltitle {
+.location .location-ltitle {
   color: #131313;
   text-align: center;
   font-family: Montserrat;
@@ -506,8 +480,7 @@ main {
   line-height: 120%; /* 14.4px */
   letter-spacing: 0.48px;
 }
-
-.location-suabltitle {
+.location .location-suabltitle {
   color: #131313;
   font-family: Montserrat;
   font-size: 12px;
@@ -516,8 +489,7 @@ main {
   line-height: 186%; /* 22.32px */
   letter-spacing: 0.48px;
 }
-
-.location-link {
+.location .location-link {
   color: #D6936D;
   font-family: Montserrat;
   font-size: 12px;
@@ -526,15 +498,13 @@ main {
   line-height: 183%; /* 21.96px */
   letter-spacing: 0.48px;
 }
-
-.location-line {
+.location .location-line {
   width: 216px;
   height: 0px;
   stroke-width: 1px;
   stroke: #E1E1E1;
 }
-
-.location-text {
+.location .location-text {
   color: #131313;
   font-family: Montserrat;
   font-size: 12px;
@@ -542,8 +512,7 @@ main {
   font-weight: 500;
   line-height: 186%; /* 22.32px */
 }
-
-.location-time {
+.location .location-time {
   color: #ABABAB;
   font-family: Montserrat;
   font-size: 12px;
@@ -551,8 +520,7 @@ main {
   font-weight: 500;
   line-height: 186%; /* 22.32px */
 }
-
-.location-tel {
+.location .location-tel {
   color: #131313;
   font-family: Montserrat;
   font-size: 12px;
@@ -560,8 +528,7 @@ main {
   font-weight: 500;
   line-height: 160%; /* 19.2px */
 }
-
-.location-mail {
+.location .location-mail {
   color: #131313;
   font-family: Montserrat;
   font-size: 12px;
@@ -569,7 +536,6 @@ main {
   font-weight: 500;
   line-height: 160%; /* 19.2px */
 }
-
 .products {
   padding-top: 61px;
   padding-bottom: 60px;
@@ -674,5 +640,30 @@ main {
 @media screen and (min-width: 768px) {
   .products {
     background-image: url(/img/desktop/Frame\ 403.png);
+  }
+  .products .products-list {
+    flex-direction: row;
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+  }
+  .products .products-item-suabtitle {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products {
+    padding-bottom: 97px;
+  }
+  .products .products-list {
+    flex-direction: row;
+    -moz-column-gap: 26px;
+         column-gap: 26px;
+  }
+  .products .products-item {
+    padding-bottom: 60px;
+  }
+  .products .products-item-suabtitle {
+    font-size: 30px;
+    letter-spacing: 1.2px;
   }
 }/*# sourceMappingURL=main.css.map */

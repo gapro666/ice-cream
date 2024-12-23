@@ -1,91 +1,86 @@
 .how-made {
-background-color: #84A178;
-}
-.how-made-subtitle {
-color: #FCFCFC;
-text-align: center;
-font-family: Montserrat;
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-text-transform: uppercase;
-}
-.how-made-title {
-color: #FCFCFC;
-text-align: center;
-font-family: "Seymour One";
-font-size: 30px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 1.2px;
-text-transform: uppercase;
-}
-.how-made-img {
-width: 278.996px;
-height: 278px;
-}
-.how-made-text {
-color: #FCFCFC;
-text-align: center;
-font-family: Montserrat;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 176%; /* 21.12px */
-letter-spacing: 0.48px;
-}
-.how-made-span-text {
-color: #FCFCFC;
-text-align: center;
-font-family: Montserrat;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 162%; /* 19.44px */
-}
-.how-made-span-text-two {
-color: #FCFCFC;
-text-align: center;
-font-family: Montserrat;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 162%; /* 19.44px */
-}
-.how-made-btn{
-color: #000;
-text-align: center;
-font-family: Montserrat;
-font-size: 14px;
-font-style: normal;
-font-weight: 600;
-line-height: 18px; /* 128.571% */
-}
-.how-made-list {
-}
-.how-made-item {
-}
-.how-made-icon {
-}
-.how-made-item-subtitle {
-color: #FCFCFC;
-text-align: center;
-font-family: Montserrat;
-font-size: 36px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 1.44px;
-text-transform: uppercase;
-}
-.how-made-item-text {
-color: #FCFCFC;
-text-align: center;
-font-family: Montserrat;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 170%; /* 20.4px */
+  background-color: #84a178;
+  padding-top: 61px;
+  padding-bottom: 68px;
+  .how-made-subtitle {
+    color: #fcfcfc;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .how-made-title {
+    color: #fcfcfc;
+    text-align: center;
+    font-family: "Seymour One";
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-bottom: 54px;
+  }
+  .how-made-img {
+    width: 278.996px;
+    height: 278px;
+    border-radius: 50%;
+    background: url(<path-to-image>) lightgray 0px -15.02px / 100% 123.077% no-repeat;
+    box-shadow: 0 -22px 0 0 #f8d34e;
+  }
+  .how-made-text {
+    color: #fcfcfc;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 176%;
+    letter-spacing: 0.48px;
+  }
+  .how-made-span-text {
+    color: #fcfcfc;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 162%;
+  }
+  .how-made-span-text-two {
+    color: #fcfcfc;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 162%;
+  }
+  .how-made-btn {
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 129%;
+  }
+  .how-made-list {
+  }
+  .how-made-item {
+  }
+  .how-made-icon {
+  }
+  .how-made-item-subtitle {
+    color: #fcfcfc;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+  }
+  .how-made-item-text {
+    color: #fcfcfc;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 170%;
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
