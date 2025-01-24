@@ -101,8 +101,8 @@ main {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   min-width: 320px;
 }
 @media screen and (min-width: 480px) {
@@ -386,6 +386,7 @@ main {
   }
   .hero .hero-text {
     font-size: 14px;
+    width: 200px;
   }
   .hero .hero-number {
     font-size: 46px;
@@ -417,14 +418,21 @@ main {
   font-weight: 400;
   letter-spacing: 1.2px;
   text-transform: uppercase;
+  margin: 0 auto;
   margin-bottom: 54px;
+  width: 200px;
 }
 .how-made .how-made-img {
   width: 278.996px;
-  height: 278px;
   border-radius: 50%;
   background: url(<path-to-image>) lightgray 0px -15.02px/100% 123.077% no-repeat;
   box-shadow: 0 -22px 0 0 #f8d34e;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.how-made .how-made-div-two {
+  width: 220px;
+  margin: 0 auto;
 }
 .how-made .how-made-text {
   color: #fcfcfc;
@@ -433,20 +441,23 @@ main {
   font-weight: 400;
   line-height: 176%;
   letter-spacing: 0.48px;
+  margin-bottom: 4px;
 }
-.how-made .how-made-span-text {
+.how-made .how-made-p-text {
   color: #fcfcfc;
   text-align: center;
   font-size: 12px;
   font-weight: 400;
   line-height: 162%;
+  margin-bottom: 4px;
 }
-.how-made .how-made-span-text-two {
+.how-made .how-made-p-text-two {
   color: #fcfcfc;
   text-align: center;
   font-size: 12px;
   font-weight: 400;
   line-height: 162%;
+  margin-bottom: 24px;
 }
 .how-made .how-made-btn {
   color: #000;
@@ -454,6 +465,33 @@ main {
   font-size: 14px;
   font-weight: 600;
   line-height: 129%;
+  padding: 12px 23px;
+  border-radius: 10px;
+  background: #f8d24e;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0 auto;
+  margin-bottom: 62px;
+}
+.how-made .how-made-list {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+}
+.how-made .how-made-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.how-made .how-made-icon {
+  border-radius: 25px;
+  background: #f8d24e;
+  padding: 7px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 16px;
 }
 .how-made .how-made-item-subtitle {
   color: #fcfcfc;
@@ -462,6 +500,7 @@ main {
   font-weight: 700;
   letter-spacing: 1.44px;
   text-transform: uppercase;
+  margin-bottom: 16px;
 }
 .how-made .how-made-item-text {
   color: #fcfcfc;
@@ -469,7 +508,107 @@ main {
   font-size: 12px;
   font-weight: 400;
   line-height: 170%;
+  width: 230px;
 }
+@media screen and (min-width: 768px) {
+  .how-made .how-made-subtitle {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 0.88px;
+  }
+  .how-made .how-made-title {
+    width: 454px;
+  }
+  .how-made .how-made-div {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .how-made .how-made-img {
+    margin-right: 38px;
+    width: 330px;
+  }
+  .how-made .how-made-div-two {
+    width: 334px;
+  }
+  .how-made .how-made-text,
+  .how-made .how-made-p-text,
+  .how-made .how-made-p-text-two {
+    text-align: left;
+  }
+  .how-made .how-made-p-text {
+    width: 312px;
+  }
+  .how-made .how-made-p-text-two {
+    width: 276px;
+    margin-bottom: 32px;
+  }
+  .how-made .how-made-btn {
+    margin-left: 0;
+  }
+  .how-made .how-made-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .how-made .how-made-item {
+    width: calc((100% - 160px) / 3);
+  }
+  .how-made .how-made-icon {
+    margin-bottom: 32px;
+  }
+  .how-made .how-made-item-subtitle {
+    margin-bottom: 12px;
+  }
+  .how-made .how-made-item-text {
+    width: 133px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .how-made .how-made-subtitle {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+  }
+  .how-made .how-made-title {
+    letter-spacing: 2.16px;
+  }
+  .how-made .how-made-text {
+    font-size: 16px;
+    line-height: 176%; /* 28.16px */
+    letter-spacing: 0.64px;
+  }
+  .how-made .how-made-div-two {
+    width: 463px;
+    margin-left: 109px;
+    padding-top: 51px;
+  }
+  .how-made .how-made-p-text,
+  .how-made .how-made-p-text-two {
+    font-size: 14px;
+    line-height: 194%; /* 27.16px */
+    letter-spacing: 0.56px;
+    width: 463px;
+  }
+  .how-made .how-made-item-subtitle {
+    font-size: 58px;
+    font-weight: 700;
+    letter-spacing: 2.32px;
+  }
+  .how-made .how-made-item-text {
+    font-size: 16px;
+    line-height: 176%; /* 28.16px */
+    letter-spacing: 0.32px;
+    width: 368px;
+  }
+  .how-made .how-made-img {
+    width: 490px;
+    height: 490px;
+    margin: 0;
+  }
+  .how-made .how-made-div {
+    margin-bottom: 60px;
+  }
+}
+
 .location .location-ltitle {
   color: #131313;
   text-align: center;
@@ -658,6 +797,7 @@ main {
     flex-direction: row;
     -moz-column-gap: 26px;
          column-gap: 26px;
+    justify-content: center;
   }
   .products .products-item {
     padding-bottom: 60px;
@@ -666,4 +806,45 @@ main {
     font-size: 30px;
     letter-spacing: 1.2px;
   }
+}
+
+.reviews {
+  background-image: url(../img/mobile/Frame\ 404.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding-bottom: 413px;
+}
+.reviews .reviews-img {
+  width: 280px;
+  border-radius: 8px;
+  margin: 0 auto;
+  margin-top: -30px;
+  margin-bottom: 80px;
+}
+.reviews .reviews-img-user {
+  width: 85px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+.reviews .reviews-text {
+  margin: 0 auto;
+  width: 280px;
+  border-radius: 10px;
+  background: #84a178;
+  padding: 35px 39px;
+  color: #fcfcfc;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 255%; /* 30.6px */
+  margin-bottom: 32px;
+}
+.reviews .reviews-title {
+  color: #131313;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 186%; /* 37.2px */
+  margin-bottom: 12px;
 }/*# sourceMappingURL=main.css.map */

@@ -18,14 +18,21 @@
     font-weight: 400;
     letter-spacing: 1.2px;
     text-transform: uppercase;
+    margin: 0 auto;
     margin-bottom: 54px;
+    width: 200px;
   }
   .how-made-img {
     width: 278.996px;
-    height: 278px;
     border-radius: 50%;
     background: url(<path-to-image>) lightgray 0px -15.02px / 100% 123.077% no-repeat;
     box-shadow: 0 -22px 0 0 #f8d34e;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  .how-made-div-two {
+    width: 220px;
+    margin: 0 auto;
   }
   .how-made-text {
     color: #fcfcfc;
@@ -34,20 +41,23 @@
     font-weight: 400;
     line-height: 176%;
     letter-spacing: 0.48px;
+    margin-bottom: 4px;
   }
-  .how-made-span-text {
+  .how-made-p-text {
     color: #fcfcfc;
     text-align: center;
     font-size: 12px;
     font-weight: 400;
     line-height: 162%;
+    margin-bottom: 4px;
   }
-  .how-made-span-text-two {
+  .how-made-p-text-two {
     color: #fcfcfc;
     text-align: center;
     font-size: 12px;
     font-weight: 400;
     line-height: 162%;
+    margin-bottom: 24px;
   }
   .how-made-btn {
     color: #000;
@@ -55,12 +65,33 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 129%;
+    padding: 12px 23px;
+    border-radius: 10px;
+    background: #f8d24e;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 0 auto;
+    margin-bottom: 62px;
   }
   .how-made-list {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
   }
   .how-made-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
   .how-made-icon {
+    border-radius: 25px;
+    background: #f8d24e;
+    padding: 7px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 16px;
   }
   .how-made-item-subtitle {
     color: #fcfcfc;
@@ -69,6 +100,7 @@
     font-weight: 700;
     letter-spacing: 1.44px;
     text-transform: uppercase;
+    margin-bottom: 16px;
   }
   .how-made-item-text {
     color: #fcfcfc;
@@ -76,11 +108,106 @@
     font-size: 12px;
     font-weight: 400;
     line-height: 170%;
+    width: 230px;
   }
   @media screen and (min-width: 480px) {
   }
   @media screen and (min-width: 768px) {
+    .how-made-subtitle {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 0.88px;
+    }
+    .how-made-title {
+      width: 454px;
+    }
+    .how-made-div {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    .how-made-img {
+      margin-right: 38px;
+      width: 330px;
+    }
+    .how-made-div-two {
+      width: 334px;
+    }
+    .how-made-text,
+    .how-made-p-text,
+    .how-made-p-text-two {
+      text-align: left;
+    }
+    .how-made-p-text {
+      width: 312px;
+    }
+    .how-made-p-text-two {
+      width: 276px;
+      margin-bottom: 32px;
+    }
+    .how-made-btn {
+      margin-left: 0;
+    }
+    .how-made-list {
+      flex-direction: row;
+      justify-content: center;
+    }
+    .how-made-item{
+        width: calc((100% - 2 * 80px)/ 3);
+    }
+    .how-made-icon{
+      margin-bottom: 32px;
+    }
+    .how-made-item-subtitle{
+      margin-bottom: 12px;
+    }
+    .how-made-item-text{
+      width: 133px;
+    }
   }
   @media screen and (min-width: 1200px) {
+    .how-made-subtitle {
+      font-size: 30px;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+    }
+    .how-made-title {
+      letter-spacing: 2.16px;
+    }
+    .how-made-text{
+      font-size: 16px;
+      line-height: 176%; /* 28.16px */
+      letter-spacing: 0.64px;
+    }
+    .how-made-div-two{
+      width: 463px;
+      margin-left: 109px;
+      padding-top: 51px;
+    }
+    .how-made-p-text,
+    .how-made-p-text-two {
+      font-size: 14px;
+      line-height: 194%; /* 27.16px */
+      letter-spacing: 0.56px;
+      width: 463px;
+    }
+    .how-made-item-subtitle{
+      font-size: 58px;
+      font-weight: 700;
+      letter-spacing: 2.32px;
+    }
+    .how-made-item-text{
+      font-size: 16px;
+      line-height: 176%; /* 28.16px */
+      letter-spacing: 0.32px;
+      width: 368px;
+    }
+    .how-made-img {
+      width: 490px;
+      height: 490px;
+      margin: 0;
+    }
+    .how-made-div {
+      margin-bottom: 60px;
+    }
   }
 }
