@@ -539,7 +539,7 @@ main {
 .products {
   padding-top: 61px;
   padding-bottom: 60px;
-  background-image: url(/img/mobile/Frame\ 404.png);
+  background-image: url(../img/mobile/Frame\ 404.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -639,7 +639,7 @@ main {
 }
 @media screen and (min-width: 768px) {
   .products {
-    background-image: url(/img/desktop/Frame\ 403.png);
+    background-image: url(../img/desktop/Frame\ 403.png);
   }
   .products .products-list {
     flex-direction: row;
