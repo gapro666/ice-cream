@@ -17,6 +17,13 @@
       referrerpolicy="no-referrer"
     />
     <title>ice-cream</title>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
@@ -214,10 +221,20 @@
           </ul>
         </div>
       </section>
+      <!-- <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">Slide 01</li>
+            <li class="splide__slide">Slide 02</li>
+            <li class="splide__slide">Slide 03</li>
+          </ul>
+        </div>
+      </section> -->
       <section class="reviews">
-        <div class="container">
-          <ul class="reviews-list">
-            <li class="reviews-item">
+        <div class="splide container" aria-label="Splide Basic HTML Example">
+          <div class="splide__track">
+          <ul class="reviews-list splide__list">
+            <li class="reviews-item splide__slide">
               <img
                 src="img/desktop/brooke-lark-8beTH4VkhLI-unsplash 1.png"
                 alt=""
@@ -235,7 +252,7 @@
               </p>
               <h3 class="reviews-title">Emily, Los Angeles</h3>
             </li>
-            <li class="reviews-item">
+            <li class="reviews-item splide__slide">
               <img
                 src="img/mobile/courtney-cook-QYsRxRPygwU-unsplash 2.jpg"
                 alt=""
@@ -252,7 +269,7 @@
               </p>
               <h3 class="reviews-title">Bryan, New-York</h3>
             </li>
-            <li class="reviews-item">
+            <li class="reviews-item splide__slide">
               <img
                 src="img/mobile/unsplash_sKM8RK2C-YI.jpg"
                 alt=""
@@ -271,7 +288,8 @@
               <h3 class="reviews-title">Diana, Chicago</h3>
             </li>
           </ul>
-          <div class="reviews-Library"></div>
+          <!-- <div class="reviews-Library"></div> -->
+        </div>
         </div>
       </section>
       <section class="location">
@@ -416,5 +434,8 @@
         <p class="footer-lext">© 2022 - IceCream. All Rights Reserved.</p>
       </div>
     </footer>
+    <script>
+      new Splide(".splide").mount();
+    </script>
   </body>
 </html>
