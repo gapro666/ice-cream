@@ -609,71 +609,88 @@ main {
   }
 }
 
+.location .location-item {
+  border-radius: 24px;
+  background: #fcfcfc;
+  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+  padding: 40px 32px 24px 32px;
+}
 .location .location-ltitle {
   color: #131313;
-  text-align: center;
-  font-family: Montserrat;
   font-size: 12px;
-  font-style: normal;
   font-weight: 500;
   line-height: 120%; /* 14.4px */
   letter-spacing: 0.48px;
+  border-radius: 4px;
+  background: #f8d24e;
+  margin-bottom: 20px;
+  padding: 4px 22px;
 }
 .location .location-suabltitle {
   color: #131313;
-  font-family: Montserrat;
   font-size: 12px;
-  font-style: normal;
   font-weight: 500;
   line-height: 186%; /* 22.32px */
   letter-spacing: 0.48px;
+  margin-bottom: 8px;
 }
 .location .location-link {
-  color: #D6936D;
-  font-family: Montserrat;
+  color: #d6936d;
   font-size: 12px;
-  font-style: normal;
   font-weight: 500;
   line-height: 183%; /* 21.96px */
   letter-spacing: 0.48px;
+  width: 210px;
 }
 .location .location-line {
   width: 216px;
   height: 0px;
   stroke-width: 1px;
-  stroke: #E1E1E1;
+  stroke: #e1e1e1;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 .location .location-text {
   color: #131313;
-  font-family: Montserrat;
   font-size: 12px;
-  font-style: normal;
   font-weight: 500;
   line-height: 186%; /* 22.32px */
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
 }
 .location .location-time {
-  color: #ABABAB;
-  font-family: Montserrat;
+  color: #ababab;
   font-size: 12px;
-  font-style: normal;
   font-weight: 500;
   line-height: 186%; /* 22.32px */
 }
 .location .location-tel {
   color: #131313;
-  font-family: Montserrat;
   font-size: 12px;
-  font-style: normal;
   font-weight: 500;
   line-height: 160%; /* 19.2px */
+  margin-bottom: 6px;
+  display: block;
 }
 .location .location-mail {
   color: #131313;
-  font-family: Montserrat;
   font-size: 12px;
-  font-style: normal;
   font-weight: 500;
   line-height: 160%; /* 19.2px */
+  display: block;
+}
+.location .location-btn {
+  color: #131313;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px; /* 128.571% */
+}
+.location .location-btn-two {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px; /* 128.571% */
 }
 .products {
   padding-top: 61px;
