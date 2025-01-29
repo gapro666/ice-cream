@@ -1,0 +1,1 @@
+const mySlider = new Splide("#reviews-splide").mount();
