@@ -1,7 +1,7 @@
 .how-made {
   background-color: #84a178;
   padding-top: 61px;
-  padding-bottom: 68px;
+  padding-bottom: 32px;
   .how-made-subtitle {
     color: #fcfcfc;
     text-align: center;
@@ -113,6 +113,7 @@
   @media screen and (min-width: 480px) {
   }
   @media screen and (min-width: 768px) {
+    padding-bottom: 60px;
     .how-made-subtitle {
       font-size: 22px;
       font-weight: 800;
@@ -165,6 +166,7 @@
     }
   }
   @media screen and (min-width: 1200px) {
+    padding-bottom: 80px;
     .how-made-subtitle {
       font-size: 30px;
       font-weight: 800;

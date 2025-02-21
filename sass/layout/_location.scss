@@ -1,11 +1,18 @@
 .location {
+  background: #84A178;
   .location-list {
+    margin-top: -353px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .location-item {
     border-radius: 24px;
     background: #fcfcfc;
     box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
     padding: 40px 32px 24px 32px;
+    margin-bottom: 16px;
+    width: 280px;
   }
   .location-ltitle {
     color: #131313;
@@ -17,6 +24,7 @@
     background: #f8d24e;
     margin-bottom: 20px;
     padding: 4px 22px;
+    display: inline-block;
   }
   .location-suabltitle {
     color: #131313;
@@ -32,10 +40,8 @@
     font-weight: 500;
     line-height: 183%; /* 21.96px */
     letter-spacing: 0.48px;
-    width: 210px;
   }
   .location-line {
-    width: 216px;
     height: 0px;
     stroke-width: 1px;
     stroke: #e1e1e1;
@@ -87,7 +93,38 @@
   @media screen and (min-width: 480px) {
   }
   @media screen and (min-width: 768px) {
+    .location-list {
+      flex-direction: row;
+      column-gap: 16px;
+    }
+    .location-item {
+      margin-bottom: 40px;
+      width: 224px;
+    }
+    .location-link {
+width: 150px;
+    }
+    .location-ltitle {
+      font-size: 14px;
+      line-height: 140%; /* 22.4px */
+      letter-spacing: 0.64px;
+    }
   }
   @media screen and (min-width: 1200px) {
+    .location-list {
+      column-gap: 32px;
+    }
+    .location-item {
+      margin-bottom: 40px;
+      width: 368px;
+    }
+    .location-link {
+width: 260px;
+    }
+    .location-ltitle {
+      font-size: 16px;
+      line-height: 140%; /* 22.4px */
+      letter-spacing: 0.64px;
+    }
   }
 }

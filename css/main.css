@@ -400,7 +400,7 @@ main {
 .how-made {
   background-color: #84a178;
   padding-top: 61px;
-  padding-bottom: 68px;
+  padding-bottom: 32px;
 }
 .how-made .how-made-subtitle {
   color: #fcfcfc;
@@ -511,6 +511,9 @@ main {
   width: 230px;
 }
 @media screen and (min-width: 768px) {
+  .how-made {
+    padding-bottom: 60px;
+  }
   .how-made .how-made-subtitle {
     font-size: 22px;
     font-weight: 800;
@@ -563,6 +566,9 @@ main {
   }
 }
 @media screen and (min-width: 1200px) {
+  .how-made {
+    padding-bottom: 80px;
+  }
   .how-made .how-made-subtitle {
     font-size: 30px;
     font-weight: 800;
@@ -609,11 +615,22 @@ main {
   }
 }
 
+.location {
+  background: #84A178;
+}
+.location .location-list {
+  margin-top: -353px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .location .location-item {
   border-radius: 24px;
   background: #fcfcfc;
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
   padding: 40px 32px 24px 32px;
+  margin-bottom: 16px;
+  width: 280px;
 }
 .location .location-ltitle {
   color: #131313;
@@ -625,6 +642,7 @@ main {
   background: #f8d24e;
   margin-bottom: 20px;
   padding: 4px 22px;
+  display: inline-block;
 }
 .location .location-suabltitle {
   color: #131313;
@@ -640,10 +658,8 @@ main {
   font-weight: 500;
   line-height: 183%; /* 21.96px */
   letter-spacing: 0.48px;
-  width: 210px;
 }
 .location .location-line {
-  width: 216px;
   height: 0px;
   stroke-width: 1px;
   stroke: #e1e1e1;
@@ -692,6 +708,44 @@ main {
   font-weight: 600;
   line-height: 18px; /* 128.571% */
 }
+@media screen and (min-width: 768px) {
+  .location .location-list {
+    flex-direction: row;
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+  }
+  .location .location-item {
+    margin-bottom: 40px;
+    width: 224px;
+  }
+  .location .location-link {
+    width: 150px;
+  }
+  .location .location-ltitle {
+    font-size: 14px;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 0.64px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .location .location-list {
+    -moz-column-gap: 32px;
+         column-gap: 32px;
+  }
+  .location .location-item {
+    margin-bottom: 40px;
+    width: 368px;
+  }
+  .location .location-link {
+    width: 260px;
+  }
+  .location .location-ltitle {
+    font-size: 16px;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 0.64px;
+  }
+}
+
 .products {
   padding-top: 61px;
   padding-bottom: 60px;
@@ -826,7 +880,7 @@ main {
 }
 
 .reviews {
-  background-image: url(../img/mobile/Frame\ 404.png);
+  background-image: linear-gradient(#84a178 36px, rgba(132, 161, 120, 0) 0%), url(../img/mobile/Frame\ 404.png);
   background-repeat: no-repeat;
   background-position: bottom right;
   padding-bottom: 413px;
@@ -835,7 +889,6 @@ main {
   width: 280px;
   border-radius: 8px;
   margin: 0 auto;
-  margin-top: -30px;
   margin-bottom: 80px;
 }
 .reviews .reviews-img-user {
@@ -864,4 +917,54 @@ main {
   font-weight: 500;
   line-height: 186%; /* 37.2px */
   margin-bottom: 12px;
+}
+.reviews .splide__pagination__page.is-active {
+  background: #84A178;
+  transform: scale(1);
+}
+.reviews .splide__arrow {
+  opacity: 0;
+}
+.reviews .splide__arrow:hover:not(:disabled) {
+  opacity: 0;
+}
+.reviews .splide__arrow:disabled {
+  opacity: 0;
+}
+.reviews .splide__arrow:focus-visible {
+  outline: 3px solid transparent;
+  outline-offset: 3px;
+}
+@media screen and (min-width: 480px) {
+  .reviews {
+    background-image: linear-gradient(#84a178 50px, rgba(132, 161, 120, 0) 0%), url(../img/mobile/Frame\ 404.png);
+  }
+  .reviews .reviews-img {
+    width: 440px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .reviews {
+    background-image: linear-gradient(#84a178 144px, rgba(132, 161, 120, 0) 0%), url(../img/desktop/Frame\ 403.png);
+  }
+  .reviews .reviews-img {
+    width: 704px;
+  }
+  .reviews .reviews-text {
+    width: 705px;
+  }
+  .reviews .reviews-title {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .reviews {
+    background-image: linear-gradient(#84a178 98px, rgba(132, 161, 120, 0) 0%), url(../img/desktop/Frame\ 403.png);
+  }
+  .reviews .reviews-img {
+    width: 1013px;
+  }
+  .reviews .reviews-text {
+    width: 968px;
+  }
 }/*# sourceMappingURL=main.css.map */
