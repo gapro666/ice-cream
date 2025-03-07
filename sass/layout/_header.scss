@@ -21,14 +21,23 @@
   }
   .header-nav-link {
   }
-  .menu {
-  }
   .menu-svg{
     fill: #FFF;
   }
   .header-btn {
     display: none;
     border: none;
+    &:hover{
+      background: #0A8817;
+    }
+    &:focus{
+      fill: #FFF;
+      color: #FFF;
+      background: #0A8817;
+    }
+    &:disabled{
+      background: #ABABAB;
+    }
   }
   @media screen and (min-width: 480px) {
     padding-top: 14px;

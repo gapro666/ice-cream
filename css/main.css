@@ -122,6 +122,45 @@ main {
   }
 }
 
+body.show-modal .backdrop {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+
+body.show-modal .modal {
+  transform: scale(1);
+}
+
+.backdrop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.74);
+  z-index: 999;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+}
+
+.modal {
+  padding: 24px;
+  border-radius: 4px;
+  max-width: 640px;
+  width: 100%;
+  min-height: 320px;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px 0px rgba 0, 0, 0, 0.2, 0px 1px 1px 0px rgba 0, 0, 0, 0.14, 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+  transform: scale(1.1);
+  transition: transform 200ms ease-in-out;
+}
+
 .footer {
   background-color: #84a178;
   padding-top: 1095px;
@@ -161,6 +200,9 @@ main {
 }
 .footer .footer-icon {
   fill: #84a178;
+}
+.footer .footer-icon:hover, .footer .footer-icon :focus {
+  fill: #ffffff;
 }
 .footer .footer-text {
   color: #131313;
@@ -204,9 +246,13 @@ main {
   }
   .footer .footer-subtilte {
     padding-bottom: 8px;
+    font-size: 26px;
+    letter-spacing: 1.04px;
   }
   .footer .footer-tilte {
     padding-bottom: 0;
+    font-size: 48px;
+    letter-spacing: 2.88px;
   }
   .footer .footer-list {
     padding-bottom: 34px;
@@ -223,6 +269,18 @@ main {
 @media screen and (min-width: 1200px) {
   .footer {
     padding-top: 635px;
+  }
+  .footer .footer-subtilte {
+    width: 530px;
+    padding-bottom: 8px;
+    font-size: 30px;
+    letter-spacing: 1.2px;
+  }
+  .footer .footer-tilte {
+    width: 500px;
+    padding-bottom: 0;
+    font-size: 58px;
+    letter-spacing: 3.48px;
   }
 }
 
@@ -248,6 +306,17 @@ main {
 .header .header-btn {
   display: none;
   border: none;
+}
+.header .header-btn:hover {
+  background: #0A8817;
+}
+.header .header-btn:focus {
+  fill: #FFF;
+  color: #FFF;
+  background: #0A8817;
+}
+.header .header-btn:disabled {
+  background: #ABABAB;
 }
 @media screen and (min-width: 480px) {
   .header {
@@ -345,6 +414,17 @@ main {
   background-color: transparent;
   padding: 11px 26px;
 }
+.hero .hero-button:hover {
+  border-color: #0A8817;
+}
+.hero .hero-button:focus {
+  fill: #FFF;
+  color: #FCFCFC;
+  border-color: #0A8817;
+}
+.hero .hero-button:disabled {
+  border-color: #ABABAB;
+}
 .hero .hero-link {
   display: inline-block;
   color: #f8d24e;
@@ -353,6 +433,15 @@ main {
   font-weight: 600;
   text-decoration: underline;
   margin-left: 12px;
+}
+.hero .hero-link:hover {
+  color: #0A8817;
+}
+.hero .hero-link:focus {
+  color: #FCFCFC;
+}
+.hero .hero-link:disabled {
+  color: #ABABAB;
 }
 .hero .hero-img,
 .hero .hero-text,
@@ -538,6 +627,17 @@ main {
   gap: 4px;
   margin: 0 auto;
   margin-bottom: 62px;
+}
+.how-made .how-made-btn:hover {
+  background: #0A8817;
+}
+.how-made .how-made-btn:focus {
+  fill: #FFF;
+  color: #FFF;
+  background: #0A8817;
+}
+.how-made .how-made-btn:disabled {
+  background: #ABABAB;
 }
 .how-made .how-made-list {
   display: flex;
@@ -774,9 +874,20 @@ main {
   font-weight: 600;
   line-height: 18px; /* 128.571% */
   border-radius: 10px;
-  background-color: #F8D24E;
+  background-color: #f8d24e;
   border: 0;
   padding: 12px 40px;
+}
+.location .location-btn:hover {
+  background: #0a8817;
+}
+.location .location-btn:focus {
+  fill: #fff;
+  color: #fff;
+  background: #0a8817;
+}
+.location .location-btn:disabled {
+  background: #ababab;
 }
 .location .location-btn-two {
   color: #000;
@@ -784,9 +895,20 @@ main {
   font-weight: 600;
   line-height: 18px; /* 128.571% */
   border-radius: 10px;
-  border: 2px solid #F8D24E;
+  border: 2px solid #f8d24e;
   padding: 10px 53px;
   background-color: rgba(0, 0, 0, 0);
+}
+.location .location-btn-two:hover {
+  border-color: #0a8817;
+}
+.location .location-btn-two:focus {
+  fill: #fff;
+  color: #fcfcfc;
+  border-color: #0a8817;
+}
+.location .location-btn-two:disabled {
+  border-color: #ababab;
 }
 @media screen and (min-width: 768px) {
   .location {
@@ -821,6 +943,7 @@ main {
 @media screen and (min-width: 1200px) {
   .location {
     margin-bottom: -635px;
+    padding-bottom: 120px;
   }
   .location .location-list {
     -moz-column-gap: 32px;

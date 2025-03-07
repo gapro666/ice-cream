@@ -36,6 +36,17 @@
     border: 2px solid #f8d24e;
     background-color: transparent;
     padding: 11px 26px;
+    &:hover{
+      border-color: #0A8817;
+    }
+    &:focus{
+      fill: #FFF;
+      color: #FCFCFC;
+      border-color: #0A8817;
+    }
+    &:disabled{
+      border-color: #ABABAB;
+    }
   }
   .hero-link {
     display: inline-block;
@@ -45,6 +56,15 @@
     font-weight: 600;
     text-decoration: underline;
     margin-left: 12px;
+    &:hover{
+      color: #0A8817;
+    }
+    &:focus{
+      color: #FCFCFC;
+    }
+    &:disabled{
+      color: #ABABAB;
+    }
   }
   .hero-img,
   .hero-text,

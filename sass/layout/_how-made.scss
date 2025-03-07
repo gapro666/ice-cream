@@ -74,6 +74,17 @@
     gap: 4px;
     margin: 0 auto;
     margin-bottom: 62px;
+    &:hover{
+      background: #0A8817;
+    }
+    &:focus{
+      fill: #FFF;
+      color: #FFF;
+      background: #0A8817;
+    }
+    &:disabled{
+      background: #ABABAB;
+    }
   }
   .how-made-list {
     display: flex;
