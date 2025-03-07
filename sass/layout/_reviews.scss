@@ -68,23 +68,33 @@
   }
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(#84a178 144px, #84a17800 0%),url(../img/desktop/Frame\ 403.png);
+    padding-bottom: 380px;
     .reviews-img {
       width: 704px;
     }
     .reviews-text {
       width: 705px; 
+      font-weight: 500;
+line-height: 186%; /* 26.04px */
+letter-spacing: 0.56px;
     }
     .reviews-title {
       margin-bottom: 32px;
+      font-size: 16px;
+line-height: 186%; /* 29.76px */
     }
   }
   @media screen and (min-width: 1200px) {
     background-image: linear-gradient(#84a178 98px, #84a17800 0%),url(../img/desktop/Frame\ 403.png);
+    padding-bottom: 228px;
     .reviews-img {
       width: 1013px;
     } 
     .reviews-text {
       width: 968px;
+font-size: 16px;
+line-height: 186%; /* 29.76px */
+letter-spacing: 0.64px;
     }
   }
 }

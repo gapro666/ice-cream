@@ -1,5 +1,7 @@
 .location {
-  background: #84A178;
+  padding-bottom: 60px;
+  margin-bottom: -1095px;
+  position: relative;
   .location-list {
     margin-top: -353px;
     display: flex;
@@ -78,24 +80,41 @@
     line-height: 160%; /* 19.2px */
     display: block;
   }
+  .location-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+  }
   .location-btn {
     color: #131313;
     font-size: 14px;
     font-weight: 600;
     line-height: 18px; /* 128.571% */
+    border-radius: 10px;
+    background-color: #F8D24E;
+    border: 0;
+    padding: 12px 40px;
   }
   .location-btn-two {
     color: #000;
     font-size: 14px;
     font-weight: 600;
     line-height: 18px; /* 128.571% */
+    border-radius: 10px;
+    border: 2px solid #F8D24E;
+    padding: 10px 53px;
+    background-color: rgba(0, 0, 0, 0);
   }
   @media screen and (min-width: 480px) {
   }
   @media screen and (min-width: 768px) {
+    margin-bottom: -360px;
     .location-list {
       flex-direction: row;
       column-gap: 16px;
+      justify-content: center;
+      margin-top: -300px;
     }
     .location-item {
       margin-bottom: 40px;
@@ -109,10 +128,17 @@ width: 150px;
       line-height: 140%; /* 22.4px */
       letter-spacing: 0.64px;
     }
+    .location-div{
+      justify-content: center;
+      flex-direction: row;
+column-gap: 16px;
+    }
   }
   @media screen and (min-width: 1200px) {
+    margin-bottom: -635px;
     .location-list {
       column-gap: 32px;
+      margin-top: -128px;
     }
     .location-item {
       margin-bottom: 40px;
