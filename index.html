@@ -70,7 +70,13 @@
             <h1 class="hero-title">
               ice cream made with <span class="hero-span-title">passion</span>
             </h1>
-            <button type="button" class="hero-button" data-action="modal-products">Products</button>
+            <button
+              type="button"
+              class="hero-button"
+              data-action="modal-products"
+            >
+              Products
+            </button>
             <a href="" class="hero-link">How it’s made?</a>
             <div class="hero-div">
               <img src="./img/desktop/многомороженок 1.png" class="hero-img" />
@@ -428,7 +434,8 @@
             Feel free to contact<a
               class="footer-contact"
               href="tel:+610383766284"
-              >+61 (0) 383 766 284</a>
+              >+61 (0) 383 766 284</a
+            >
           </p>
         </div>
       </div>
@@ -437,23 +444,43 @@
         <p class="footer-lext">© 2022 - IceCream. All Rights Reserved.</p>
       </div>
     </footer>
-<!-- ======================Разметка модальных окон======================= -->
+    <!-- ======================Разметка модальных окон======================= -->
     <div class="backdrop" id="modal-menu">
-      <div class="modal">
+      <div class="modal manu">
         <button class="close-btn">x</button>
-        <p>hjcv;vhjklhjv;hlvjkjlhvkvhklb</p>
-        
+        <a class="logo" href="/">
+          <svg width="40" height="37" class="header-svg-logo">
+            <use href="img/symbol-defs.svg#logo"></use>
+          </svg>
+        </a>
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-nav-item">
+              <a href="/" class="header-nav-link">Home</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="/" class="header-nav-link">How it’s made?</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="/" class="header-nav-link">Our products</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="/" class="header-nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button type="button" class="header-btn">
+          Buy now
+          <svg width="12" height="12" class="header-svg-btn">
+            <use href="img/symbol-defs.svg#arrow-btn"></use>
+          </svg>
+        </button>
       </div>
     </div>
     <div class="backdrop" id="modal-products">
       <div class="modal">
         <button class="close-btn">x</button>
-        <p>22222222222222222</p>
-      </div>
-    </div>
-    <!-- <div class="backdrop" >
-      <div class="modal">
-        <button class="close-btn">x</button>
+        
       </div>
     </div>
     <div class="backdrop">
@@ -470,7 +497,12 @@
       <div class="modal">
         <button class="close-btn">x</button>
       </div>
-    </div> -->
+    </div>
+    <div class="backdrop">
+      <div class="modal">
+        <button class="close-btn">x</button>
+      </div>
+    </div>
     <script type="module" src="js/burger.js"></script>
     <script type="module" src="js/reviews-slider.js"></script>
   </body>

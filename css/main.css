@@ -122,16 +122,6 @@ main {
   }
 }
 
-body.show-modal .backdrop {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: initial;
-}
-
-body.show-modal .modal {
-  transform: scale(1);
-}
-
 .backdrop {
   display: flex;
   justify-content: center;
@@ -148,8 +138,15 @@ body.show-modal .modal {
   visibility: hidden;
   transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
 }
-
-.modal {
+.backdrop.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+.backdrop.active .modal {
+  transform: scale(1);
+}
+.backdrop .modal {
   padding: 24px;
   border-radius: 4px;
   max-width: 640px;
@@ -160,7 +157,6 @@ body.show-modal .modal {
   transform: scale(1.1);
   transition: transform 200ms ease-in-out;
 }
-
 .footer {
   background-color: #84a178;
   padding-top: 1095px;
