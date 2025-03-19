@@ -23,13 +23,18 @@ document.addEventListener("DOMContentLoaded", () => {
   function openModal(modalId) {
     const modal = document.getElementById(modalId);
     if (modal) {
-      modal.classList.toggle("active");
+      modal.classList.add("active");
       document.body.style.overflow = "hidden"; // Заборона прокрутки
       window.addEventListener("keydown", onEscPress);
     }
   }
   function closeModal(modal) {
-    modal.classList.toggle("active");
+    modal.classList.remove("active");
+    const nestedModal=modal.querySelector('backdrop active')
+if (nestedModal) {
+  nestedModal.classList.remove('active')
+}
+
     document.body.style.overflow = "";
     window.removeEventListener("keydown", onEscPress);
   }
@@ -40,8 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
       openModal(modalId);
     });
   });
-  // Закрытие модальных окон по кликуz
-  modalButtons.forEach((modal) => {
+  // Закрытие модальных окон по клику
+  modals.forEach((modal) => {
     console.log(modal);
 
     modal.addEventListener("click", (event) => {
