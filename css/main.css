@@ -157,6 +157,55 @@ main {
   transform: scale(1.1);
   transition: transform 200ms ease-in-out;
 }
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-input {
+  border-radius: 10px;
+  border: 1px solid #84A178;
+  background: rgba(248, 210, 78, 0.1);
+  padding: 8px 48px 8px 12px;
+  margin-bottom: 12px;
+}
+
+.modal-Comment {
+  border-radius: 10px;
+  border: 1px solid #84A178;
+  background: rgba(248, 210, 78, 0.1);
+  padding: 8px 62px 40px 12px;
+  margin-bottom: 26px;
+}
+
+.modal-Submit {
+  display: flex;
+  padding: 12px 36px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #f8d24e;
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+}
+
+.menu-btn {
+  display: flex;
+  padding: 12px 36px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #f8d24e;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+}
+
 .footer {
   background-color: #84a178;
   padding-top: 1095px;

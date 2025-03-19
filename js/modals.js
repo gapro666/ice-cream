@@ -23,14 +23,16 @@ document.addEventListener("DOMContentLoaded", () => {
   function openModal(modalId) {
     const modal = document.getElementById(modalId);
     if (modal) {
-      modal.classList.add("active");
+      modal.classList.toggle("active");
       document.body.style.overflow = "hidden"; // Заборона прокрутки
-      // window.addEventListener("keydown", onEscPress);
+      window.addEventListener("keydown", onEscPress);
     }
-  };
-  function closeModal(modal){
-    modal.classList.remove('active');
-  };
+  }
+  function closeModal(modal) {
+    modal.classList.toggle("active");
+    document.body.style.overflow = "";
+    window.removeEventListener("keydown", onEscPress);
+  }
   // Открытие модальных окон по клику
   modalButtons.forEach((button) => {
     button.addEventListener("click", () => {
@@ -38,17 +40,25 @@ document.addEventListener("DOMContentLoaded", () => {
       openModal(modalId);
     });
   });
-  // Закрытие модальных окон по клику
+  // Закрытие модальных окон по кликуz
   modalButtons.forEach((modal) => {
+    console.log(modal);
+
     modal.addEventListener("click", (event) => {
       console.log(event);
-      
+
       if (
         event.target.classList.contains("backdrop") ||
         event.target.classList.contains("close-btn")
       ) {
-        closeModal(modal)
+        closeModal(modal);
       }
     });
   });
+  //  Закриття по Escape
+  function onEscPress(event) {
+    if (event.key === "Escape") {
+      modals.forEach((modal) => closeModal(modal));
+    }
+  }
 });
