@@ -77,7 +77,9 @@
             >
               Products
             </button>
-            <a href="#" class="hero-link" data-action="modal-how-made">How it’s made?</a>
+            <a href="#" class="hero-link" data-action="modal-how-made"
+              >How it’s made?</a
+            >
             <div class="hero-div">
               <img src="./img/desktop/многомороженок 1.png" class="hero-img" />
               <p class="hero-text">
@@ -97,7 +99,7 @@
           </div>
         </div>
       </section>
-      <section class="products">
+      <section class="products" id="products">
         <div class="container">
           <h4 class="products-subtitle">100% natural</h4>
           <h2 class="products-title">products</h2>
@@ -157,7 +159,7 @@
           </ul>
         </div>
       </section>
-      <section class="how-made">
+      <section class="how-made" id="how-made">
         <div class="container">
           <h4 class="how-made-subtitle">tradition and love</h4>
           <h2 class="how-made-title">how it’s made?</h2>
@@ -182,7 +184,7 @@
               <p class="how-made-p-text-two">
                 This is enough to choose ice cream and coffee for any mood!
               </p>
-              <button class="how-made-btn" >
+              <button class="how-made-btn">
                 Read more
                 <svg class="" width=" 12px" height=" 12px">
                   <use href="img/symbol-defs.svg#arrow-btn"></use>
@@ -191,7 +193,7 @@
             </div>
           </div>
           <ul class="how-made-list">
-            <il class="how-made-item">
+            <li class="how-made-item">
               <div class="how-made-icon">
                 <svg width=" 36px" height=" 36px">
                   <use href="img/symbol-defs.svg#cow"></use>
@@ -201,8 +203,8 @@
               <p class="how-made-item-text">
                 Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
               </p>
-            </il>
-            <il class="how-made-item">
+            </li>
+            <li class="how-made-item">
               <div class="how-made-icon">
                 <svg width=" 36px" height=" 36px">
                   <use href="img/symbol-defs.svg#weight"></use>
@@ -212,8 +214,8 @@
               <p class="how-made-item-text">
                 Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
               </p>
-            </il>
-            <il class="how-made-item">
+            </li>
+            <li class="how-made-item">
               <div class="how-made-icon">
                 <svg width=" 36px" height=" 36px">
                   <use href="img/symbol-defs.svg#ice-crema"></use>
@@ -223,7 +225,7 @@
               <p class="how-made-item-text">
                 Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
               </p>
-            </il>
+            </li>
           </ul>
         </div>
       </section>
@@ -301,7 +303,7 @@
               <a
                 href="https://maps.app.goo.gl/fZmPPUdndzR753jY7"
                 class="location-link"
-                >10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</a
+                >10340 Ridgeland Ave, Chicago Ridge, li 60415, USA</a
               >
               <hr class="location-line" />
               <p class="location-text">
@@ -384,13 +386,21 @@
             </li>
           </ul>
           <div class="location-div">
-            <button type="button" class="location-btn" data-action="modal-locations">
+            <button
+              type="button"
+              class="location-btn"
+              data-action="modal-locations"
+            >
               Our Locations
               <svg width="12" height="12">
                 <use href="img/symbol-defs.svg#arrow-btn"></use>
               </svg>
             </button>
-            <button type="button" class="location-btn-two" data-action="modal-franchise">
+            <button
+              type="button"
+              class="location-btn-two"
+              data-action="modal-franchise"
+            >
               Franchise
               <svg width="12" height="12">
                 <use href="img/symbol-defs.svg#arrow-btn"></use>
@@ -430,7 +440,7 @@
               </a>
             </li>
           </ul>
-          <p class="footer-text">
+          <p class="footer-text" id="footer">
             Feel free to contact<a
               class="footer-contact"
               href="tel:+610383766284"
@@ -447,13 +457,17 @@
     <!-- ======================Разметка модальных окон======================= -->
     <div class="backdrop" id="modal-menu" data-action="backdrop">
       <div class="modal">
-        <div>
+        <div class="menu-wraper">
           <a class="logo" href="/">
             <svg width="40" height="37" class="header-svg-logo">
               <use href="img/symbol-defs.svg#logo"></use>
             </svg>
           </a>
-          <button class="close-btn" data-action="close-btn">x</button>
+          <button class="close-btn" data-action="close-btn">
+            <svg width="32" height="32" class="close-btn-icon">
+              <use href="img/symbol-defs.svg#close"></use>
+            </svg>
+          </button>
         </div>
         <nav class="header-nav">
           <ul class="header-list">
@@ -461,13 +475,13 @@
               <a href="/" class="header-nav-link">Home</a>
             </li>
             <li class="header-nav-item">
-              <a href="/" class="header-nav-link">How it’s made?</a>
+              <a href="#how-made" class="header-nav-link">How it’s made?</a>
             </li>
             <li class="header-nav-item">
-              <a href="/" class="header-nav-link">Our products</a>
+              <a href="#products" class="header-nav-link">Our products</a>
             </li>
             <li class="header-nav-item">
-              <a href="/" class="header-nav-link">Contact</a>
+              <a href="#footer" class="header-nav-link">Contact</a>
             </li>
           </ul>
         </nav>
@@ -477,113 +491,87 @@
             <use href="img/symbol-defs.svg#arrow-btn"></use>
           </svg>
         </button>
-        <!-- <div class="backdrop" id="modal-buy-now-in" data-action="backdrop">
-          <div class="modal">
-            <button class="close-btn" data-action="close-btn">x</button>
-            <h2>Buy now</h2>
-            <ul>
-              <il>
-                <img src="" alt="" />
-                <h3>ice cream</h3>
-              </il>
-              <il>
-                <img src="" alt="" />
-                <h3>ice coffee</h3>
-              </il>
-              <il>
-                <img src="" alt="" />
-                <h3>milkshake</h3>
-              </il>
-            </ul>
-            <form class="modal-form">
-              <input type="name" placeholder="Name" class="modal-input">
-              <input type="tel" placeholder="Phone" class="modal-input">
-              <textarea placeholder="Comment" class="modal-Comment"></textarea>
-              <button class="modal-Submit">Submit</button>
-            </form>
-          </div>
-        </div> -->
       </div>
     </div>
     <div class="backdrop" id="modal-products" data-action="backdrop">
       <div class="modal">
         <button class="close-btn" data-action="close-btn">x</button>
-        <h2>Chololate icecream</h2>
+        <h2 class="products-title">Chololate icecream</h2>
         <img src="" alt="" />
-        <ul>
-          <il>
+        <ul class="modal-products-list">
+          <li>
             <p>320</p>
             <p>kcal</p>
-          </il>
-          <il>
+          </li>
+          <li>
             <p>4g</p>
             <p>Prote...</p>
-          </il>
-          <il>
+          </li>
+          <li>
             <p>8,2g</p>
             <p>Fats</p>
-          </il>
-          <il>
+          </li>
+          <li>
             <p>40,4g</p>
             <p>Carbs</p>
-          </il>
+          </li>
         </ul>
-        <h3>Ingredients</h3>
-        <ul>
-          <il>
+        <h3 class="modal-products-titul-list">Ingredients</h3>
+        <ul class="modal-products-list-two">
+          <li class="modal-products-item-two">
             <p>Milk</p>
             <p>100ml</p>
-          </il>
-          <il>
+          </li>
+          <li class="modal-products-item-two">
             <p>Belgian chocolate</p>
             <p>20g</p>
-          </il>
-          <il>
+          </li>
+          <li class="modal-products-item-two">
             <p>Cream</p>
             <p>150 ml</p>
-          </il>
-          <il>
+          </li>
+          <li class="modal-products-item-two">
             <p>Cocoa powder</p>
             <p>30g</p>
-          </il>
-          <il>
+          </li>
+          <li class="modal-products-item-two">
             <p>Sugar</p>
             <p>40g</p>
-          </il>
-          <il>
+          </li>
+          <li class="modal-products-item-two">
             <p>Vanilla sugar</p>
             <p>10g</p>
-          </il>
+          </li>
         </ul>
         <form class="modal-form">
-          <input type="name" placeholder="Name" class="modal-input">
-          <input type="tel" placeholder="Phone" class="modal-input">
+          <input type="name" placeholder="Name" class="modal-input" />
+          <input type="tel" placeholder="Phone" class="modal-input" />
           <textarea placeholder="Comment" class="modal-Comment"></textarea>
           <button class="modal-Submit">Submit</button>
         </form>
       </div>
     </div>
-    <div class="backdrop" id="modal-buy-now" data-action="backdrop">
+    <div class="backdrop active" id="modal-buy-now" data-action="backdrop">
       <div class="modal">
         <button class="close-btn" data-action="close-btn">x</button>
-        <h2>Buy now</h2>
-        <ul>
-          <il>
-            <img src="" alt="" />
-            <h3>ice cream</h3>
-          </il>
-          <il>
-            <img src="" alt="" />
-            <h3>ice coffee</h3>
-          </il>
-          <il>
-            <img src="" alt="" />
-            <h3>milkshake</h3>
-          </il>
+        <h2 class="buy-now-titul">Buy now</h2>
+        <ul class="buy-now-list">
+          <li class="buy-now-imput">
+            <!-- <img src="img/mobile/kelsey-curtis-G5ZenftPPOA-unsplash 2.png" alt="" width="132px"/> -->
+            <h3 class="buy-now-subtitul">ice cream</h3>
+          </li>
+          <li class="buy-now-imput">
+            <img src="img/mobile/pariwat-pannium-0_qbeF_0zn8-unsplash 1.png" alt="" width="132px"/>
+            <h3 class="buy-now-subtitul">ice coffee</h3>
+          </li>
+          <li class="buy-now-imput">
+            <img src="img/mobile/victor-rutka-4FujjkcI40g-unsplash 1.png" alt="" width="132px"/>
+            <h3 class="buy-now-subtitul">milkshake</h3>
+          </li>
         </ul>
         <form class="modal-form">
-          <input type="name" placeholder="Name" class="modal-input">
-          <input type="tel" placeholder="Phone" class="modal-input">
+          <input type="name" placeholder="Name" class="modal-input" />
+          <input type="tel" placeholder="Phone" class="modal-input" />
           <textarea placeholder="Comment" class="modal-Comment"></textarea>
           <button class="modal-Submit">Submit</button>
         </form>
@@ -592,17 +580,18 @@
     <div class="backdrop" id="modal-how-made" data-action="backdrop">
       <div class="modal">
         <button class="close-btn" data-action="close-btn">x</button>
-        <h3>How it’s made?</h3>
+        <h3 class="modal-how-made-titule">How it’s made?</h3>
         <video
+          class="modal-how-made-video"
           src=""
-          poster=""
-          width=""
+          poster="img/mobile/mobile.png"
+          width="224"
           controls
           autoplay
           loop
           preload=""
         ></video>
-        <p>
+        <p class="modal-how-made-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet,
           consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -613,16 +602,23 @@
     <div class="backdrop" id="modal-locations" data-action="backdrop">
       <div class="modal">
         <button class="close-btn" data-action="close-btn">x</button>
-        <h2>Our Locations</h2>
-        <map name=""></map>
-        <button>Open map</button>
+        <h2 class="locations-titule">Our Locations</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d779.0266903936133!2d-50.705505776019066!3d67.01392809569693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sfr!4v1743613209836!5m2!1sru!2sfr"
+          width="224"
+          height="199"
+          style="border-radius: 10px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </div>
     <div class="backdrop" id="modal-franchise" data-action="backdrop">
       <div class="modal">
         <button class="close-btn" data-action="close-btn">x</button>
-        <h2>Thank you for your interest in owning an Ice Cream shop</h2>
-        <p>
+        <h2 class="franchise-titul">Thank you for your interest in owning an Ice Cream shop</h2>
+        <p class="franchise-text">
           Due to the overwhelming volume of franchise requests we are not
           accepting new franchisee applications at this time. Once the
           application process resumes, we will contact you for further
@@ -630,9 +626,9 @@
           reach out for additional information. We appreciate your patience.
         </p>
         <form class="modal-form">
-          <input type="name" placeholder="Name" class="modal-input">
-          <input type="tel" placeholder="Phone" class="modal-input">
-          <input type="email" placeholder="Email" class="modal-input">
+          <input type="name" placeholder="Name" class="modal-input" />
+          <input type="tel" placeholder="Phone" class="modal-input" />
+          <input type="email" placeholder="Email" class="modal-input" />
           <textarea placeholder="Comment" class="modal-Comment"></textarea>
           <button class="modal-Submit">Submit</button>
         </form>

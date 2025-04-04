@@ -1,0 +1,47 @@
+#modal-products {
+  .modal{
+    width: 280px;
+    
+  }
+  .close-btn{
+    
+  }
+  .products-title{
+    color: #131313;
+font-family: "Seymour One";
+font-size: 20px;
+font-weight: 400;
+line-height: 28px; /* 140% */
+text-align: center;
+  }
+  .modal-products-list {
+    display: flex;
+    justify-content: center;
+  }
+  .modal-products-list-two {
+    color: #131313;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 176%; /* 24.64px */
+    letter-spacing: 0.56px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 11px;
+    margin-bottom: 40px;
+  }
+  .modal-products-titul-list {
+    color: #131313;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .modal-products-item-two {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+}

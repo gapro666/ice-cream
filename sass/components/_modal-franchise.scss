@@ -1,0 +1,26 @@
+#modal-franchise {
+    .modal{
+        width: 280px;
+    }
+  .franchise-titul {
+    color: #131313;
+    font-family: "Seymour One";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    width: 221px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .franchise-text {
+    color: #131313;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+    width: 222px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 768px) {
+  }
+}
