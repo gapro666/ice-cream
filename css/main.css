@@ -278,7 +278,7 @@ main {
   font-weight: 400;
   line-height: 24px; /* 150% */
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 83px;
 }
 #modal-buy-now .buy-now-list {
   margin-bottom: 32px;
@@ -287,7 +287,7 @@ main {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  row-gap: 20px;
+  row-gap: 85px;
 }
 #modal-buy-now .buy-now-imput {
   border-radius: 15px;
@@ -297,13 +297,6 @@ main {
 }
 #modal-buy-now .buy-now-imput:nth-child(1) {
   border: 2px solid #96af8c;
-  position: relative;
-}
-#modal-buy-now .buy-now-imput:nth-child(1)::before {
-  content: url("../../img/mobile/kelsey-curtis-G5ZenftPPOA-unsplash 2.png");
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 #modal-buy-now .buy-now-imput:nth-child(2) {
   border: 2px solid #efd478;
@@ -311,13 +304,16 @@ main {
 #modal-buy-now .buy-now-imput:nth-child(3) {
   border: 2px solid #d6936d;
 }
+#modal-buy-now .modal-buy-img {
+  margin-top: -63px;
+}
 #modal-buy-now .buy-now-subtitul {
   color: #131313;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.64px;
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 27px;
 }
 #modal-how-made .modal {
   width: 280px;

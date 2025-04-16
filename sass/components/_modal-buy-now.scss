@@ -9,7 +9,7 @@
     font-weight: 400;
     line-height: 24px; /* 150% */
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 83px;
   }
   .buy-now-list {
     margin-bottom: 32px;
@@ -18,7 +18,7 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    row-gap: 20px;
+    row-gap: 85px;
   }
   .buy-now-imput {
     border-radius: 15px;
@@ -27,21 +27,23 @@
     width: 132px;
     &:nth-child(1) {
       border: 2px solid #96af8c;
-      position: relative;
+    //   position: relative;
     }
-    &:nth-child(1)::before{
-content: url("../../img/mobile/kelsey-curtis-G5ZenftPPOA-unsplash\ 2.png");
-position: absolute;
-top: 0;
-left: 0;
-      }
+//     &:nth-child(1)::before{
+// content: url("../../img/mobile/kelsey-curtis-G5ZenftPPOA-unsplash\ 2.png");
+// position: absolute;
+// top: 0;
+// left: 0;
+//       }
     &:nth-child(2) {
       border: 2px solid #efd478;
     }
     &:nth-child(3) {
       border: 2px solid #d6936d;
     }
-
+  }
+  .modal-buy-img{
+      margin-top: -63px;
   }
   .buy-now-subtitul {
     color: #131313;
@@ -49,7 +51,7 @@ left: 0;
     font-weight: 700;
     letter-spacing: 0.64px;
     text-transform: uppercase;
-    margin-top: 20px;
+    margin-top: 27px;
   }
   @media screen and (min-width: 768px) {
   }
