@@ -304,6 +304,15 @@ main {
 #modal-buy-now .buy-now-imput:nth-child(3) {
   border: 2px solid #d6936d;
 }
+#modal-buy-now .checked:nth-child(1) {
+  background-color: #96af8c;
+}
+#modal-buy-now .checked:nth-child(2) {
+  background-color: #efd478;
+}
+#modal-buy-now .checked:nth-child(3) {
+  background-color: #d6936d;
+}
 #modal-buy-now .modal-buy-img {
   margin-top: -63px;
 }
@@ -315,6 +324,10 @@ main {
   text-transform: uppercase;
   margin-top: 27px;
 }
+[type=checkbox]:checked > li {
+  background-color: #d6936d;
+}
+
 #modal-how-made .modal {
   width: 280px;
   padding: 28px;
