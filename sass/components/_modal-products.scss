@@ -1,22 +1,55 @@
 #modal-products {
-  .modal{
+  .modal {
     width: 280px;
-    
   }
-  .close-btn{
-    
-  }
-  .products-title{
+  .products-title {
     color: #131313;
-font-family: "Seymour One";
-font-size: 20px;
-font-weight: 400;
-line-height: 28px; /* 140% */
-text-align: center;
+    font-family: "Seymour One";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .modal-products-img {
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 0 7px 0 0 rgba(156, 190, 143, 0.7);
+    filter: drop-shadow(0px 5.26px 19.726px rgba(10, 136, 23, 0.25));
+    margin-bottom: 29px;
   }
   .modal-products-list {
     display: flex;
     justify-content: center;
+    column-gap: 9px;
+    margin-bottom: 40px;
+  }
+  .modal-products-item {
+    border-radius: 40px;
+    border: 2px solid #9cbe8f;
+    width: 53px;
+    height: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .modal-products-text {
+    background-color: #9cbe8f;
+    border-radius: 50%;
+    filter: drop-shadow(0px 6px 20px rgba(10, 136, 23, 0.25));
+    width: 43px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 28px; /* 280% */
+  }
+  .modal-products-text-two {
+    color: #131313;
+    font-size: 10px;
+    font-weight: 400;
   }
   .modal-products-list-two {
     color: #131313;
@@ -43,5 +76,11 @@ text-align: center;
   }
 
   @media screen and (min-width: 768px) {
+    .modal {
+      width: 568px;
+    }
+    .modal-products-list {
+      column-gap: 20px;
+    }
   }
 }

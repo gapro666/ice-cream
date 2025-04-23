@@ -11,6 +11,7 @@
     width: 221px;
     margin: 0 auto;
     margin-bottom: 20px;
+    text-align: center;
   }
   .franchise-text {
     color: #131313;
@@ -22,5 +23,16 @@
     margin-bottom: 24px;
   }
   @media screen and (min-width: 768px) {
+    .modal{
+      width: 568px;
+  }
+  .franchise-titul {
+width: 322px;
+font-size: 20px;
+  }
+  .franchise-text {
+width: 448px;
+font-size: 16px;
+  }
   }
 }

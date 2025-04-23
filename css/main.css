@@ -206,6 +206,14 @@ main {
   border: none;
 }
 
+@media screen and (min-width: 768px) {
+  .modal-input {
+    width: 368px;
+  }
+  .modal-Comment {
+    width: 368px;
+  }
+}
 #modal-menu .modal {
   width: 100vw;
   height: 100vh;
@@ -298,11 +306,23 @@ main {
 #modal-buy-now .buy-now-imput:nth-child(1) {
   border: 2px solid #96af8c;
 }
+#modal-buy-now .buy-now-imput:nth-child(1) .modal-buy-img {
+  box-shadow: 0 7px 0 0 rgba(156, 190, 143, 0.7);
+  filter: drop-shadow(0px 5.26px 19.726px rgba(10, 136, 23, 0.25));
+}
 #modal-buy-now .buy-now-imput:nth-child(2) {
   border: 2px solid #efd478;
 }
+#modal-buy-now .buy-now-imput:nth-child(2) .modal-buy-img {
+  box-shadow: 0 7px 0 0 rgba(248, 210, 78, 0.7);
+  filter: drop-shadow(0px 5.26px 19.726px rgba(153, 114, 23, 0.25));
+}
 #modal-buy-now .buy-now-imput:nth-child(3) {
   border: 2px solid #d6936d;
+}
+#modal-buy-now .buy-now-imput:nth-child(3) .modal-buy-img {
+  box-shadow: 0 7px 0 0 rgba(213, 117, 63, 0.7);
+  filter: drop-shadow(0px 5.26px 19.726px rgba(0, 0, 0, 0.25));
 }
 #modal-buy-now .checked:nth-child(1) {
   background-color: #96af8c;
@@ -315,6 +335,7 @@ main {
 }
 #modal-buy-now .modal-buy-img {
   margin-top: -63px;
+  border-radius: 50%;
 }
 #modal-buy-now .buy-now-subtitul {
   color: #131313;
@@ -324,6 +345,17 @@ main {
   text-transform: uppercase;
   margin-top: 27px;
 }
+@media screen and (min-width: 768px) {
+  #modal-buy-now .modal {
+    width: 568px;
+  }
+  #modal-buy-now .buy-now-list {
+    flex-direction: row;
+    -moz-column-gap: 32px;
+         column-gap: 32px;
+  }
+}
+
 [type=checkbox]:checked > li {
   background-color: #d6936d;
 }
@@ -346,6 +378,7 @@ main {
   border-radius: 10px;
   height: 199px;
   margin-bottom: 20px;
+  width: 224px;
 }
 #modal-how-made .modal-how-made-text {
   color: #131313;
@@ -353,6 +386,21 @@ main {
   font-weight: 400;
   width: 224px;
 }
+@media screen and (min-width: 768px) {
+  #modal-how-made .modal {
+    width: 568px;
+    padding: 32px 60px;
+  }
+  #modal-how-made .modal-how-made-text {
+    font-size: 16px;
+    width: 448px;
+  }
+  #modal-how-made .modal-how-made-video {
+    width: 448px;
+    margin-bottom: 32px;
+  }
+}
+
 #modal-products .modal {
   width: 280px;
 }
@@ -363,10 +411,48 @@ main {
   font-weight: 400;
   line-height: 28px; /* 140% */
   text-align: center;
+  margin-bottom: 20px;
+}
+#modal-products .modal-products-img {
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 0 7px 0 0 rgba(156, 190, 143, 0.7);
+  filter: drop-shadow(0px 5.26px 19.726px rgba(10, 136, 23, 0.25));
+  margin-bottom: 29px;
 }
 #modal-products .modal-products-list {
   display: flex;
   justify-content: center;
+  -moz-column-gap: 9px;
+       column-gap: 9px;
+  margin-bottom: 40px;
+}
+#modal-products .modal-products-item {
+  border-radius: 40px;
+  border: 2px solid #9cbe8f;
+  width: 53px;
+  height: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#modal-products .modal-products-text {
+  background-color: #9cbe8f;
+  border-radius: 50%;
+  filter: drop-shadow(0px 6px 20px rgba(10, 136, 23, 0.25));
+  width: 43px;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 28px; /* 280% */
+}
+#modal-products .modal-products-text-two {
+  color: #131313;
+  font-size: 10px;
+  font-weight: 400;
 }
 #modal-products .modal-products-list-two {
   color: #131313;
@@ -391,6 +477,16 @@ main {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (min-width: 768px) {
+  #modal-products .modal {
+    width: 568px;
+  }
+  #modal-products .modal-products-list {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
+
 #modal-locations .modal {
   width: 280px;
 }
@@ -403,6 +499,22 @@ main {
   text-align: center;
   margin-bottom: 20px;
 }
+#modal-locations .locations-map {
+  width: 224px;
+  height: 199px;
+  display: block;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  #modal-locations .modal {
+    width: 568px;
+  }
+  #modal-locations .locations-map {
+    width: 448px;
+    height: 260px;
+  }
+}
+
 #modal-franchise .modal {
   width: 280px;
 }
@@ -415,6 +527,7 @@ main {
   width: 221px;
   margin: 0 auto;
   margin-bottom: 20px;
+  text-align: center;
 }
 #modal-franchise .franchise-text {
   color: #131313;
@@ -425,6 +538,20 @@ main {
   margin: 0 auto;
   margin-bottom: 24px;
 }
+@media screen and (min-width: 768px) {
+  #modal-franchise .modal {
+    width: 568px;
+  }
+  #modal-franchise .franchise-titul {
+    width: 322px;
+    font-size: 20px;
+  }
+  #modal-franchise .franchise-text {
+    width: 448px;
+    font-size: 16px;
+  }
+}
+
 .footer {
   background-color: #84a178;
   padding-top: 1095px;
@@ -1403,6 +1530,10 @@ main {
   font-weight: 500;
   line-height: 186%; /* 37.2px */
   margin-bottom: 12px;
+}
+.reviews .splide__pagination {
+  gap: 10px;
+  bottom: -5px;
 }
 .reviews .splide__pagination__page.is-active {
   background: #84A178;

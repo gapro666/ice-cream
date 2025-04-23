@@ -17,6 +17,7 @@
     border-radius: 10px;
     height: 199px;
     margin-bottom: 20px;
+    width: 224px;
   }
   .modal-how-made-text {
     color: #131313;
@@ -26,5 +27,17 @@
 
   }
   @media screen and (min-width: 768px) {
+    .modal {
+      width: 568px;
+      padding: 32px 60px;
+    }
+    .modal-how-made-text {
+      font-size: 16px;
+      width: 448px;
+    }
+    .modal-how-made-video {
+      width: 448px;
+      margin-bottom: 32px;
+    }
   }
 }

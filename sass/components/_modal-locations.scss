@@ -1,20 +1,30 @@
-#modal-locations{
-.modal{
+#modal-locations {
+  .modal {
     width: 280px;
-}
-.locations-titule{
-color: #131313;
-font-family: "Seymour One";
-font-size: 16px;
-font-weight: 400;
-line-height: 24px; /* 150% */
-text-align: center;
-margin-bottom: 20px;
-}
+  }
+  .locations-titule {
+    color: #131313;
+    font-family: "Seymour One";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .locations-map {
+    width: 224px;
+    height: 199px;
+    display: block;
+    margin: 0 auto;
+  }
 
-
-
-@media screen and (min-width: 768px) {
-
-}
+  @media screen and (min-width: 768px) {
+    .modal {
+width: 568px;
+      }
+    .locations-map {
+      width: 448px;
+      height: 260px;
+    }
+  }
 }
